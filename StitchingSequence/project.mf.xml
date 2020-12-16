@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <manifest>
-    <application name="StichingSequence">
+    <application name="StitchingSequence">
         <crown name="StitchingSequence">
             <desc>user script</desc>
             <serves/>
