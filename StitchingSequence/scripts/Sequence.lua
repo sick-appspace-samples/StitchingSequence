@@ -5,13 +5,13 @@ print('AppEngine Version: ' .. Engine.getVersion())
 local DELAY = 1000 -- ms between visualization steps for demonstration purpose
 
 -- Create a viewer
-local viewer = View.create('viewer2D1')
+local viewer = View.create()
 
 --End of Global Scope-----------------------------------------------------------
 
 --Start of Function and Event Scope---------------------------------------------
 
--- Function for stitching images from one camera
+---Function for stitching images from one camera
 local function stitchSingle(folder, imageCount)
 
   -- Create a sequence stitcher and configure it
@@ -35,7 +35,7 @@ local function stitchSingle(folder, imageCount)
   return stitchedImage
 end
 
--- Function for stitching images from multiple sources
+---Function for stitching images from multiple sources
 local function stitchMultiple(folders, imageCount)
   -- Create a sequence stitcher and configure it
   local sequence = Image.Stitching.Sequence.create()
@@ -63,7 +63,7 @@ local function stitchMultiple(folders, imageCount)
   return stitchedImage
 end
 
--- Main processing
+---Main processing
 local function main()
   -- Folders with image sequences
   local dataPath = {
